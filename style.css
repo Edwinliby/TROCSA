@@ -17,7 +17,7 @@ body {
     align-items: center;
     text-align: center;
     /* background-color: antiquewhite; */
-    height: 40em;
+    height: 50em;
     margin-left: 2em;
     margin-right: 2em;
     z-index: -1;
@@ -102,6 +102,10 @@ body {
     video {
         width: 100%;
         height: auto;
+    }
+    footer{
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
