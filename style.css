@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('Assets/BG2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* home start  */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    height: 40em;
+    margin-left: 2em;
+    margin-right: 2em;
+    z-index: -1;
+}
+
+.welcome h1 span {
+    color: #A4C537;
+}
+
+.welcome h1 {
+    font-size: 4em;
+}
+
+.welcome p {
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-style: italic;
+}
+.welcome b{
+    color: #A4C537;
+}
+
+.divider {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.divider span {
+    font-weight: bolder;
+    color: aqua;
+    padding-left: .5em;
+}
+
+/* home end  */
+
+
+/* about start */
+.About {
+    background-color: rgb(72, 72, 72);
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.ABOUT {
+    margin-top: 1em;
+    font-size: 2em;
+    color: orange;
+}
+
+.content {
+    margin-left: 1em;
+    margin-right: 1em;
+    flex: 60%;
+}
+
+.content p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.College {
+    flex: 40%;
+    margin: 1em;
+    text-align: center;
+    height: auto;
+}
+
+@media (max-width:700px) {
+    .about {
+        flex-direction: column;
+        margin-left: 1em;
+        margin-right: 1.5em;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* about end */
+
+
+/* footer start */
+footer {
+    text-align: center;
+    background-color: #333;
+    padding-top: .5em;
+}
+
+footer p {
+    padding-bottom: .5em;
+}
+
+footer span {
+    color: #A4C537;
+    font-weight: bold;
+}
+
+/* footer end  */
+
+
+/* bottam Nav  */
+.bottamNav {
+    background-color: black;
+    padding: 1em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: .3em;
+}
+
+.menu i {
+    color: orange;
+}
+
+
+.two {
+    padding-left: 2em;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.add {
+    padding-top: 1.5em;
+    padding-left: 2em;
+}
+
+.add span {
+    color: #A4C537;
+}
+
+.add p {
+    padding-top: .5em;
+}
+
+.menu a:hover {
+    color: #A4C537;
+    transition: all .5 ease-in-out;
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .bottamNav {
+        padding: .5em;
+    }
+
+    .menu {
+        font-size: small;
+        justify-content: space-around;
+    }
+
+    .add {
+        padding-top: 0em;
+        padding-left: 1em;
+        padding-bottom: 1.5em;
+    }
+
+    img {
+        margin-top: 2em;
+        width: 150px;
+        height: 100px;
+    }
+}
