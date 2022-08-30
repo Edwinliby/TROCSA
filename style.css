@@ -17,8 +17,8 @@ body {
     align-items: center;
     text-align: center;
     height: 50em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
     z-index: -1;
 }
 
@@ -53,7 +53,7 @@ body {
 .divider span {
     height: .1em;
     width: 5em;
-    background-color: aliceblue;
+    background-color: gray;
     margin-left: 1em;
 }
 
@@ -63,16 +63,16 @@ body {
 /* about start */
 .About {
     background-color: rgb(0, 0, 0, .9);
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .about {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .ABOUT {
@@ -102,10 +102,22 @@ body {
 }
 
 @media (max-width:700px) {
+    .About {
+        padding-top: 2em;
+    }
+
     .about {
         flex-direction: column;
-        margin-left: 1em;
-        margin-right: 1.5em;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .welcome p {
+        font-size: 1em;
+    }
+
+    .welcome h1 {
+        font-size: 2em;
     }
 
     video {
@@ -207,6 +219,7 @@ footer span {
 @media(max-width:700px) {
     .row {
         flex-direction: column;
+        margin: 1em;
     }
 
     .bottamNav {
@@ -222,6 +235,10 @@ footer span {
         padding-top: 0em;
         padding-left: 1em;
         padding-bottom: 1.5em;
+    }
+
+    .add p {
+        font-size: .9em;
     }
 
     img {
@@ -250,9 +267,10 @@ footer span {
     margin-left: 2em;
     border-radius: 1em;
 }
-.card img{
+
+.card img {
     border-top-left-radius: 1em;
-    border-top-right-radius:1em;
+    border-top-right-radius: 1em;
 }
 
 .card-inside {
@@ -266,16 +284,18 @@ footer span {
 @media(max-width:700px) {
     .gallery {
         flex-direction: column;
-        padding: 1em;
+        padding: 0;
         padding-top: 0;
     }
-    .card{
+
+    .card {
         width: 20em;
         margin-left: 0;
         margin: 1em;
         margin-top: 0;
     }
-    .card img{
+
+    .card img {
         height: 100%;
     }
 }

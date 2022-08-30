@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,13 +37,13 @@
       </ul>
     </nav>
     <!-- <a href="#about"><button>Explore</button></a> -->
-    <label class="hamburger-icon"  for="menu-toggle">&#9776;</label>
+    <label class="hamburger-icon" for="menu-toggle">&#9776;</label>
     <input type="checkbox" id="menu-toggle" />
   </header>
 
 
   <section id="home" class="home">
-    <div class="welcome">
+    <div class="welcome" data-aos="zoom-in" data-aos-delay="500">
       <h1>Welcome to TRO<span>CS</span>A</h1>
       <p>Department of Computer Science & Enginnering <br>
         <b>- College of Engineering Aranmula</b>
@@ -57,7 +59,7 @@
 
 
   <section id="about" class="About">
-    <div class="about">
+    <div class="about" data-aos="fade-up" data-aos-duration="3000">
       <div class="College">
         <video src="Assets/college_vid.mp4" width="500" controls></video>
       </div>
@@ -73,41 +75,46 @@
 
 
 
+
   <div class="divider">
     Members
     <span></span>
   </div>
 
+
+
   <section class="gallery" id="gallery">
-    <div class="card">
-      <img src="Assets/PIC/1.jpeg"  style="width:100%">
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+      <img src="Assets/PIC/1.jpeg" style="width:100%">
       <div class="card-inside">
-        <h4><b>NASA</b></h4> 
-        <p>The Thinker</p> 
+        <h4><b>NASA</b></h4>
+        <p>The Thinker</p>
       </div>
     </div>
-    <div class="card">
-      <img src="Assets/PIC/3.jpeg"  style="width:100%">
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+      <img src="Assets/PIC/3.jpeg" style="width:100%">
       <div class="card-inside">
-        <h4><b>UV</b></h4> 
-        <p>Kadal kaatin arike</p> 
+        <h4><b>UV</b></h4>
+        <p>Kadal kaatin arike</p>
       </div>
     </div>
-    <div class="card">
-      <img src="Assets/PIC/4.jpeg"  style="width:100%">
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+      <img src="Assets/PIC/4.jpeg" style="width:100%">
       <div class="card-inside">
-        <h4><b>Minnal</b></h4> 
-        <p>Rep</p> 
+        <h4><b>Minnal</b></h4>
+        <p>Rep</p>
       </div>
     </div>
-    <div class="card">
-      <img src="Assets/PIC/5.jpeg"  style="width:100%">
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+      <img src="Assets/PIC/5.jpeg" style="width:100%">
       <div class="card-inside">
-        <h4><b>Edwin liby</b></h4> 
-        <p>Developer</p> 
+        <h4><b>Edwin liby</b></h4>
+        <p>Developer</p>
       </div>
     </div>
   </section>
+
+
 
 
   <section class="bottamNav" id="bottom">
@@ -147,5 +154,9 @@
   </footer>
 
 </body>
+
+<script>
+  AOS.init();
+</script>
 
 </html>
