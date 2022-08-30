@@ -16,7 +16,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: antiquewhite; */
     height: 50em;
     margin-left: 2em;
     margin-right: 2em;
@@ -36,19 +35,26 @@ body {
     font-weight: bolder;
     font-style: italic;
 }
-.welcome b{
+
+.welcome b {
     color: #A4C537;
 }
 
 .divider {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    height: 2em;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .divider span {
-    font-weight: bolder;
-    color: aqua;
-    padding-left: .5em;
+    height: .1em;
+    width: 5em;
+    background-color: aliceblue;
+    margin-left: 1em;
 }
 
 /* home end  */
@@ -56,14 +62,17 @@ body {
 
 /* about start */
 .About {
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(0, 0, 0, .9);
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .about {
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 .ABOUT {
@@ -103,9 +112,19 @@ body {
         width: 100%;
         height: auto;
     }
-    footer{
+
+    footer {
         padding-left: 1em;
         padding-right: 1em;
+    }
+
+    .divider {
+        padding-left: 1em;
+    }
+
+    .divider span {
+        width: 4em;
+        margin-left: .5em;
     }
 }
 
@@ -211,3 +230,13 @@ footer span {
         height: 100px;
     }
 }
+
+/* gallery start  */
+
+.gallery {
+    display: flex;
+    background-color: aquamarine;
+    height: 30em;
+}
+
+/* gallery end  */
