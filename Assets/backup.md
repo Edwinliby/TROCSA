@@ -35,6 +35,7 @@
       </div>
 
     </div>
+
   </section>
   /* contact start  */
 .row {
@@ -44,68 +45,68 @@
 }
 
 .address {
-    margin-top: 1em;
-    margin-bottom: 1em;
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 .add i {
-    font-size: 1.5em;
+font-size: 1.5em;
 }
 
 .add h4 {
-    color: orange;
-    font-size: 1.5em;
-    padding-top: .5em;
+color: orange;
+font-size: 1.5em;
+padding-top: .5em;
 }
 
 .add p {
-    padding-bottom: 1em;
+padding-bottom: 1em;
 }
 
 form {
-    margin-top: 1em;
-    margin-bottom: 1em;
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 .rowForm {
-    display: flex;
+display: flex;
 }
 
 .form-control {
-    padding: 1em;
-    margin: .5em;
+padding: 1em;
+margin: .5em;
 }
 
 .colForm {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    margin: .5em;
+display: flex;
+justify-content: center;
+margin: .5em;
 }
 
 .btn button {
-    padding: .5em;
-    width: 150px;
-    border-radius: 5px;
-    border-color: orange;
+padding: .5em;
+width: 150px;
+border-radius: 5px;
+border-color: orange;
 }
 
 .btn button:hover {
-    border-color: white;
-    background-color: orange;
-    color: black;
-    transition: .5s ease-in-out;
-    box-shadow: 0px 0px 5px rgb(183, 183, 183);
+border-color: white;
+background-color: orange;
+color: black;
+transition: .5s ease-in-out;
+box-shadow: 0px 0px 5px rgb(183, 183, 183);
 }
 
 @media(max-width:700px) {
-    .row {
-        flex-direction: column;
-    }
+.row {
+flex-direction: column;
+}
 
     .address {
         margin-left: 1.5em;
@@ -114,6 +115,7 @@ form {
     .rowForm {
         flex-direction: column;
     }
+
 }
 
-/* contact end  */
+/_ contact end _/

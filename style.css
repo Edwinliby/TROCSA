@@ -17,24 +17,52 @@ body {
     z-index: -1;
 }
 
+hr {
+    background-color: #333;
+}
+
 /* home start  */
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 40em;
+    height: 50em;
     margin-left: 1em;
     margin-right: 1em;
     z-index: -1;
 }
 
-.welcome h1 span {
+.welcome strong span {
     color: #A4C537;
 }
 
-.welcome h1 {
+.welcome strong {
     font-size: 4em;
+}
+
+.a1 {
+    animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: transparent;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    75% {
+        color: #A4C537;
+    }
+
+    100% {
+        color: #A4C537;
+    }
 }
 
 .welcome p {
@@ -48,7 +76,7 @@ body {
 }
 
 .divider {
-    background-color: #333;
+    background-color: #111;
     display: flex;
     align-items: center;
     padding-left: 2em;
@@ -113,6 +141,10 @@ body {
         padding-top: 2em;
     }
 
+    .home {
+        text-align: left;
+    }
+
     .about {
         flex-direction: column;
         margin-left: .5em;
@@ -139,6 +171,7 @@ body {
 
     .divider {
         padding-left: 1em;
+        font-size: 1.5em;
     }
 
     .divider span {
@@ -262,7 +295,6 @@ footer span {
     display: flex;
     background-color: #333;
     padding: 2em;
-    padding-top: 1em;
     align-items: center;
     justify-content: center;
 }
@@ -309,3 +341,117 @@ footer span {
 }
 
 /* gallery end  */
+
+/* contact start  */
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: black;
+}
+
+.address1 {
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.add1 i {
+    font-size: 1.5em;
+}
+
+.add1 h4 {
+    color: orange;
+    font-size: 1.5em;
+    padding-top: .5em;
+}
+
+.add1 p {
+    padding-bottom: 1em;
+}
+
+form {
+    margin-top: 1em;
+    margin-right: 4em;
+    margin-bottom: 1em;
+}
+
+.rowForm {
+    display: flex;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 1em;
+    margin: .5em;
+}
+
+.colForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: .5em;
+}
+
+.btn button {
+    padding: .5em;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    border-color: orange;
+}
+
+.btn button:hover {
+    border-color: white;
+    background-color: orange;
+    color: black;
+    transition: .5s ease-in-out;
+    box-shadow: 0px 0px 5px rgb(183, 183, 183);
+}
+
+.social {
+    padding-top: 1em;
+}
+
+.social a {
+    font-size: 2em;
+    padding: .5em;
+    padding-left: 0;
+}
+
+.social a i {
+    color: orange;
+}
+
+.social a i:hover {
+    color: white;
+    transition: .5s;
+}
+
+@media(max-width:700px) {
+    .row1 {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    form {
+        margin-right: 0;
+    }
+
+    .address1 {
+        margin-left: 1.5em;
+    }
+
+    .rowForm {
+        flex-direction: column;
+    }
+}
+
+/* contact end  */

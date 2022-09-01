@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS-Department</title>
+  <title>TROCSA</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Assets/" type="image/x-icon">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -22,9 +22,8 @@
     <source src="Assets/Binary.mp4" type="video/mp4">
   </video>
 
-
   <header>
-    <a class="logo" href="">TRO<strong>CS</strong>A</a>
+    <a class="logo" href="">TRO<span>CS</span>A</a>
     <nav>
       <ul class="nav_links">
         <li><a href="#home">Home</a></li>
@@ -49,7 +48,7 @@
 
   <section id="home" class="home">
     <div class="welcome" data-aos="zoom-in" data-aos-delay="500">
-      <h1>Welcome to TRO<span>CS</span>A</h1>
+      <strong>Welcome to TRO<span class="a1">CS</span>A</strong>
       <p>Department of Computer Science & Enginnering <br>
         <b>- College of Engineering Aranmula</b>
       </p>
@@ -82,7 +81,7 @@
 
 
   <div class="divider">
-    Members
+    Team
     <span></span>
   </div>
 
@@ -120,8 +119,52 @@
   </section>
 
 
+  <div class="divider">
+    Contact
+    <span></span>
+  </div>
 
 
+  <section id="contact" class="contact">
+    <div class="row1">
+      <div class="address1">
+
+        <div class="add1">
+          <i class="fa-solid fa-paper-plane"></i>
+          <h4>Email:</h4>
+          <p>trosca@aec.in</p>
+        </div>
+        <div class="add1">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Phone no:</h4>
+          <p>0468 231 9131</p>
+        </div>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-square-github"></i></a>
+        </div>
+      </div>
+
+      <div class="form">
+        <form>
+          <div class="rowForm">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="colForm">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message"
+              required></textarea>
+          </div>
+          <div class="btn"><button>Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<hr>
   <section class="bottamNav" id="bottom">
     <div class="row">
       <div class="address">
@@ -134,15 +177,16 @@
       </div>
       <div class="menu">
         <ul>
+          <span>Quick Links</span>
           <li><i class="fa-solid fa-angle-right"></i><a href="#home"> Home</a></li>
-          <li><i class="fa-solid fa-angle-right"></i><a href="#about"> About</a></li>
-          <li><i class="fa-solid fa-angle-right"></i><a href=""> Contact</a></li>
+          <li><i class="fa-solid fa-angle-right"></i><a href="#contact"> Contact</a></li>
           <li><i class="fa-solid fa-angle-right"></i><a
               href="https://www.google.com/maps/place/College+of+Engineering,+Aranmula/@9.3222405,76.6812471,17z/data=!4m12!1m6!3m5!1s0x3b063d0921e18ea9:0xa09306d585c4d1f4!2sCollege+of+Engineering,+Aranmula!8m2!3d9.3222405!4d76.6834358!3m4!1s0x3b063d0921e18ea9:0xa09306d585c4d1f4!8m2!3d9.3222405!4d76.6834358">
               Map</a></li>
           <li><i class="fa-solid fa-angle-right"></i><a href="404.html"> Privacy policy</a></li>
         </ul>
         <ul class="two">
+          <span>Useful Links</span>
           <li><i class="fa-solid fa-angle-right"></i><a href="404.html"> Workshops</a></li>
           <li><i class="fa-solid fa-angle-right"></i><a href=""> Webinars</a></li>
           <li><i class="fa-solid fa-angle-right"></i><a href=""> IOT</a></li>
