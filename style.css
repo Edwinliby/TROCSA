@@ -42,7 +42,8 @@ hr {
 }
 
 .a1 {
-    animation: blinking 1s infinite;
+    animation: blinking 2s infinite;
+    filter: drop-shadow(0px 0px 5px #A4C537);
 }
 
 @keyframes blinking {
@@ -270,6 +271,7 @@ footer span {
     .menu {
         font-size: small;
         justify-content: space-around;
+        padding-top: 1em;
     }
 
     .add {
@@ -455,3 +457,51 @@ form {
 }
 
 /* contact end  */
+
+/* organizations start  */
+.organizations {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, .9);
+}
+
+article {
+    display: flex;
+    width: 200%;
+    animation: bannermove 20s linear infinite;
+}
+
+.org {
+    display: flex;
+    list-style-type: none;
+}
+
+.org li {
+    display: flex;
+    align-items: center;
+    padding-left: 4em;
+    margin: .5em;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@media(max-width:700px) {
+    .org img{
+        width: auto;
+        height: 3.5em;
+    }
+    .org li{
+        padding-left: 1.5em;
+    }
+    artilce{
+        animation: bannermove 5s linear infinite;
+    }
+}
+/* organizations end  */
