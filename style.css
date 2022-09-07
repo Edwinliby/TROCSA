@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     background-color: #333;
@@ -81,9 +82,11 @@ hr {
     display: flex;
     align-items: center;
     padding-left: 2em;
+    font-family: 'Roboto', sans-serif;
     height: 2em;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 900;
+    color: rgb(164, 164, 164);
 }
 
 .divider span {
@@ -502,15 +505,85 @@ article {
     artilce {
         animation: bannermove 5s linear infinite;
     }
+
+    .Event_gallery {
+        flex-direction: column;
+    }
 }
 
 /* organizations end  */
 
 
-/* service block start  */
+
+/* Event gallery start  */
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    transition: transform .3s ease-in-out;
+}
+
+.effect {
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.txt {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    visibility: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.effect:hover .txt {
+    visibility: visible;
+    opacity: 1;
+}
 
 
-/* service block end  */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Event gallery end  */
 
 
 /* animation start  */
@@ -613,6 +686,7 @@ article {
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
 .circles li:nth-child(11) {
     left: 85%;
     width: 15px;
@@ -620,6 +694,7 @@ article {
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
 .circles li:nth-child(12) {
     left: 85%;
     width: 60px;
@@ -642,4 +717,5 @@ article {
         border-radius: 50%;
     }
 }
+
 /* animation ends  */
