@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -8,6 +12,7 @@
     font-size: 25px;
     padding: .5em;
     padding-left: 1em;
+    color: white;
 }
 
 .logo span {
@@ -36,7 +41,6 @@
 
 .dropdown li a {
     font-size: 1em;
-    /* padding: 0 0px; */
 }
 
 .dropdown li i {
@@ -52,7 +56,142 @@ li:hover .dropdown {
 }
 
 
-.navbar {
+
+.header {
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: 0.3s ease-in-out;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.menu li a:hover {
+    color: #A4C537;
+    background-color: rgb(100, 100, 100, .4);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 2em;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+    top: 10px;
+}
+
+.header .menu-icon .nav-icon:after {
+    top: -10px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+
+
+/* .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +213,6 @@ li:hover .dropdown {
     text-decoration: none;
 }
 
-/* NAVBAR MENU */
 .menu {
     display: flex;
     gap: .5em;
@@ -83,7 +221,7 @@ li:hover .dropdown {
 
 .menu li a:hover {
     color: #A4C537;
-    background-color: rgb(100, 100, 100,.4);
+    background-color: rgb(100, 100, 100, .4);
     border-radius: 10px;
     transition: 0.3s ease;
 }
@@ -101,7 +239,6 @@ input[type=checkbox] {
     display: none;
 }
 
-/*HAMBURGER MENU*/
 .hamburger {
     display: none;
     font-size: 40px;
@@ -109,7 +246,7 @@ input[type=checkbox] {
     user-select: none;
 }
 
-/* APPLYING MEDIA QUERIES */
+
 @media (max-width: 700px) {
     .menu {
         display: none;
@@ -150,4 +287,4 @@ input[type=checkbox] {
     .hamburger {
         display: block;
     }
-}
+} */

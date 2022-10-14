@@ -17,41 +17,26 @@
 </head>
 
 <body>
-  <!-- 
-  <video class="bgvideo" autoplay muted loop>
-    <source src="" type="video/mp4">
-  </video> -->
-
-  <nav class="navbar" id="navbar">
-    <div class="logo"><a href="">TRO<span>CS</span>A</a></div>
-    <ul class="nav-links">
-      <!-- <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
-      <div class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#Event_gallery">Events</a></li>
-        <!-- <li><a href="#">Web</a>
-          <ul class="dropdown">
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i>Android Group</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i>Web Group</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-right"></i>IOT Group</a></li>
-          </ul>
-        </li> -->
-        <li><a href="#gallery">Team</a></li>
-        <li><a href="#bottamNav">Contact</a></li>
-      </div>
+  <header class="header" id="navbar">
+    <a class="logo" href="">TRO<span>CS</span>A</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#Event_gallery">Events</a></li>
+      <li><a href="#gallery">Team</a></li>
+      <li><a href="#bottamNav">Contact</a></li>
     </ul>
-  </nav>
+  </header>
 
 
   <div class="area">
     <section id="home" class="home">
       <div class="welcome" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
         <strong>Welcome to TRO<span class="a1">CS</span>A</strong>
-        <p>Department of Computer Science & Enginnering <br>
-          <b>- College of Engineering Aranmula</b>
-        </p>
+        <p>Department of Computer Science & Enginnering </p>
+        <b>- College of Engineering Aranmula</b>
       </div>
     </section>
     <ul class="circles">
@@ -70,61 +55,76 @@
   </div>
 
 
-  <section id="about" class="About">
-    <div class="about" data-aos="fade-up" data-aos-duration="3000">
+  <section id="about">
+    <!-- <div class="about" data-aos="fade-up" data-aos-duration="3000">
       <div class="College">
-        <video src="Assets/about.mp4" width="500" height="500" autoplay muted controls></video>
+        <video src="Assets/about.mp4" width="400" height="400" autoplay muted controls></video>
       </div>
       <div class="content" data-aos="fade-left">
-        <br>
         <b class="ABOUT">About <span>AEC</span> & <span>TRO<span class="color-cs">CS</span>A</span></b>
         <p>Established in 2014, as part of the Co-operative Academy of Professional Education (CAPE). It is the 8th
-          Engineering College under the Co-operative Academy of Professional Education.
+          Engineering College under the Co-operative Academy of Professional Education. TROCSA is a initiative of CS
+          department where the students can develop their skills in various level of fields that helps in their career.
+        </p>
+      </div>
+    </div> -->
+    <div class="about" data-aos="fade-up" data-aos-duration="3000">
+      <video src="Assets/about.mp4" autoplay muted controls></video>
+      <div class="content" data-aos="fade-left">
+        <b>About <span class="color-cs">AEC</span> & <span>TRO<span class="color-cs">CS</span>A</span></b>
+        <p>Established in 2014, as part of the Co-operative Academy of Professional Education (CAPE). It is the 8th
+          Engineering College under the Co-operative Academy of Professional Education. TROCSA is a initiative of CS
+          department where the students can develop their skills in various level of fields that helps in their career.
         </p>
       </div>
     </div>
   </section>
 
 
-  <div class="divider">
-    INTEREST GROUPS
-    <span></span>
+  <div class="divider" id="Interest-grp">
+    <span class="div1"><span class="div-sp">INTEREST</span> GROUPS</span>
+    <span class="div2">INTEREST GROUPS</span>
   </div>
 
 
-  <section id="Interest-grp">
+  <section>
 
     <div class="interest-row">
-      <a href="404.html">
-        <div class="grp">
-          <img src="Assets/PIC/android.png">
-          <span>Android <br> Interest Group</span>
-        </div>
-      </a>
-      <a href="404.html">
-        <div class="grp">
-          <img src="Assets/PIC/web.jpg">
-          <span>Web Dev <br> Interest Group</span>
-        </div>
-      </a>
-      <a href="404.html">
-        <div class="grp">
-          <img src="Assets/PIC/IOT.jpeg">
-          <span>IOT <br> Interest Group</span>
-        </div>
-      </a>
+      <div class="grp">
+        <img src="Assets/PIC/android.png">
+        <span>
+          <b>ANDROID</b>
+          <br> Interest Group <br>
+          <a href="404.html">JOIN</a>
+        </span>
+      </div>
+      <div class="grp">
+        <img src="Assets/PIC/web.jpg">
+        <span>
+          <b>WEB DEV</b>
+          <br> Interest Group <br>
+          <a href="404.html">JOIN</a>
+        </span>
+      </div>
+      <div class="grp">
+        <img src="Assets/PIC/IOT.jpeg">
+        <span>
+          <b>IOT</b>
+          <br> Interest Group <br>
+          <a href="404.html">JOIN</a>
+        </span>
+      </div>
     </div>
 
   </section>
 
-
-  <div class="divider">
-    EVENT GALLERY
-    <span></span>
+  <div class="divider" id="Event_gallery">
+    <span class="div1"><span class="div-sp">EVENT</span> GAllERY</span>
+    <span class="div2">EVENT GALLERY</span>
   </div>
 
 
-  <section id="Event_gallery">
+  <section>
     <div class="events">
       <div class="effect">
         <img class="event-img" src="Assets/PIC/11.jpeg" data-aos="zoom-in">
@@ -158,58 +158,47 @@
   </section>
 
 
-  <div class="divider">
-    TEAM
-    <span></span>
+  <div class="divider" id="gallery">
+    <span class="div1"><span class="div-sp">TEAM</span> MEMBERS</span>
+    <span class="div2">TEAM MEMBERS</span>
   </div>
 
 
-  <section class="gallery" id="gallery">
+  <section class="gallery">
+
     <div class="card" data-aos="zoom-out-up" data-aos-delay="500">
-      <img src="Assets/PIC/nithin.png">
+      <img src="Assets/PIC/edwin.png">
       <div class="card-inside">
-        <h4><b>S Nithin</b></h4>
-        <p>The Thinker</p>
+        <h4><b>Edwin</b></h4>
+        <p>Web Developer</p>
       </div>
     </div>
     <div class="card" data-aos="zoom-out-up" data-aos-delay="500">
       <img src="Assets/PIC/uv.png">
       <div class="card-inside">
         <h4><b>UV</b></h4>
-        <p>Designer</p>
+        <p>Buddy</p>
       </div>
     </div>
     <div class="card" data-aos="zoom-out-up" data-aos-delay="500">
       <img src="Assets/PIC/tijin.png">
       <div class="card-inside">
         <h4><b>TijiN</b></h4>
-        <p>Lead</p>
+        <p>Buddy</p>
       </div>
     </div>
     <div class="card" data-aos="zoom-out-up" data-aos-delay="500">
-      <img src="Assets/PIC/edwin.png">
+      <img src="Assets/PIC/nithin.png">
       <div class="card-inside">
-        <h4><b>Edwin</b></h4>
-        <p>Developer</p>
-      </div>
-    </div>
-    <div class="card" data-aos="zoom-out-up" data-aos-delay="500">
-      <img src="Assets/PIC/spider.png">
-      <div class="card-inside">
-        <h4><b>Anonymous</b></h4>
-        <p>Developer</p>
+        <h4><b>Nithin</b></h4>
+        <p>Buddy</p>
       </div>
     </div>
 
   </section>
 
 
-  <!-- <div class="divider">
-    Contact
-    <span></span>
-  </div>
-
-
+  <!--
   <section id="contact" class="contact">
     <div class="row1">
       <div class="address1">
@@ -308,7 +297,7 @@
     </div>
 
     <footer>
-      <p>Designed & Developed by <span>2020-2024</span> CSE Batch</p>
+      <p>Designed & Developed by <a href="https://github.com/Edwinliby"> eKuttan</a></p>
     </footer>
   </section>
 
@@ -325,7 +314,7 @@
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar").style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-50px";
+      document.getElementById("navbar").style.top = "-4em";
     }
     prevScrollpos = currentScrollPos;
   }
