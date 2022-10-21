@@ -142,18 +142,19 @@ hr {
 @media (max-width:700px) {
     .about {
         flex-direction: column;
-        height: 120vh;
+        height: 150vh;
     }
 
     .about video {
         width: 100%;
-        height: 35em;
+        height: 30em;
         padding: 0 .5em;
         overflow: hidden;
+        /* background-color: #A4C537; */
     }
 
     .content {
-        width: 13.5em;
+        width: 12em;
     }
 
     .content b {
@@ -565,6 +566,9 @@ article {
     position: relative;
     height: 20em;
     width: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .txt {
@@ -592,15 +596,16 @@ article {
 @media screen and (max-width: 900px) {
 
     .events {
-        height: 110vh;
+        height: 125vh;
+        /* background-color: aliceblue; */
     }
 
     .event-img {
-        width: 23em;
+        width: 22em;
     }
 
     .effect {
-        width: 23em;
+        width: 22em;
     }
 
 }
@@ -608,15 +613,15 @@ article {
 @media screen and (max-width: 600px) {
 
     .events {
-        height: 110vh;
+        height: 125vh;
     }
 
     .event-img {
-        width: 23em;
+        width: 22em;
     }
 
     .effect {
-        width: 23em;
+        width: 22em;
     }
 }
 
