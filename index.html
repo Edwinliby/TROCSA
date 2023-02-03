@@ -31,6 +31,18 @@
   </header>
 
 
+  <div class="loader">
+    <img src="Assets/preloader.gif">
+  </div>
+  <script>
+    var loader = document.querySelector(".loader")
+    window.addEventListener("load", vanish);
+    function vanish() {
+      loader.classList.add("disppear");
+    }
+  </script>
+
+
   <main>
     <section id="home" class="home">
       <div class="welcome">
@@ -88,8 +100,10 @@
 
     <section id="Interest-grp" class="Interest-grp">
       <div class="divider">
-        <span class="div1"><span style="color: rgb(164, 197, 55);">INTEREST</span> GROUPS</span>
-        <span class="div2"><span style="color: rgb(164, 197, 55);">INTEREST</span> GROUPS</span>
+        <span style="color: rgb(0, 0, 0,.4);" class="div1"><span style="color: rgb(164, 197, 55);">INTEREST</span>
+          GROUPS</span>
+        <span style="color: rgb(0, 0, 0,.4);" class="div2"><span style="color: rgb(164, 197, 55);">INTEREST</span>
+          GROUPS</span>
       </div>
 
       <div class="Interest-row">
@@ -136,8 +150,10 @@
 
     <section id="Event_gallery" class="Event_gallery">
       <div class="divider event">
-        <span class="div1"><span style="color: rgb(164, 197, 55);">EVENT</span> GALLERY</span>
-        <span class="div2"><span style="color: rgb(164, 197, 55);">EVENT</span> GALLERY</span>
+        <span style="color: rgb(0, 0, 0,.4);" class="div1"><span style="color: rgb(164, 197, 55);">EVENT</span>
+          GALLERY</span>
+        <span style="color: rgb(0, 0, 0,.4);" class="div2"><span style="color: rgb(164, 197, 55);">EVENT</span>
+          GALLERY</span>
       </div>
 
       <div class="main">
@@ -160,8 +176,10 @@
 
     <section class="team-members" id="team">
       <div class="divider team">
-        <span class="div1"><span style="color: rgb(164, 197, 55);">TEAM</span> MEMBERS</span>
-        <span class="div2"><span style="color: rgb(164, 197, 55);">TEAM</span> MEMBERS</span>
+        <span style="color: rgb(0, 0, 0,.4);" class="div1"><span style="color: rgb(164, 197, 55);">TEAM</span>
+          MEMBERS</span>
+        <span style="color: rgb(0, 0, 0,.4);" class="div2"><span style="color: rgb(164, 197, 55);">TEAM</span>
+          MEMBERS</span>
       </div>
 
 

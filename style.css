@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 2px solid red; */
 }
 
 html {
@@ -34,7 +35,7 @@ section {
 
 .div1 {
     font-size: 4rem;
-    opacity: .15;
+    opacity: .1;
 }
 
 .div2 {
@@ -107,7 +108,7 @@ section {
 
 .Interest-grp .Interest-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 3rem 1rem;
     padding-bottom: 0;
     flex-wrap: wrap;
@@ -122,6 +123,10 @@ section {
     border-radius: 10px;
     background-color: rgb(238, 238, 238, .5);
     width: 24rem;
+}
+
+.grp:hover{
+    box-shadow: 3px 3px 3px 3px #cfcfcf;
 }
 
 .grp b {
@@ -261,7 +266,7 @@ section {
 }
 
 .modal img {
-    width: 50%;
+    width: 90%;
     padding: .5rem;
     object-fit: cover;
 }

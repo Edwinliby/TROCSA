@@ -358,11 +358,46 @@ article {
 /* organizations end  */
 
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.disppear {
+    animation: vanish 1.5s forwards;
+}
+
+@keyframes vanish {
+    from {
+        visibility: visible;
+        opacity: 100;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
 
 /* Responsive Layout Start */
 @media(width<1024) {
+    .Interest-grp {
+        padding: 1rem;
+    }
+
     .grp {
-        width: 20rem;
+        width: 15rem;
     }
 }
 
@@ -384,7 +419,7 @@ article {
     }
 
     .div1 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         opacity: .15;
     }
 
@@ -395,13 +430,17 @@ article {
         top: 20px;
     }
 
+    .grp {
+        width: 23rem;
+    }
+
     .Interest-row {
         gap: 1rem;
     }
 
     .event .div2,
     .team .div2 {
-        left: 55px;
+        left: 25px;
     }
 
     .event {
