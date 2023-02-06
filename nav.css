@@ -448,8 +448,12 @@ article {
     }
 
     .bottamNav {
-        font-size: 1rem;
+        font-size:.9rem;
         padding: 2rem 1rem;
+    }
+
+    .footer{
+        font-size:.5rem;
     }
 
     .row {
